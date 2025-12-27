@@ -101,4 +101,9 @@ theme: guide-layout
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  # 必须是 git@github.com 格式，不能是 https://
+  repo: git@github.com:senchin0/senchin0.github.io.git
+  # 必须是展示仓库的分支名
+  branch: main  
+  force: true
